@@ -1,4 +1,4 @@
-# mobile_projeto_pergunta
+# aula6_widgets_event
 
 A new Flutter project.
 

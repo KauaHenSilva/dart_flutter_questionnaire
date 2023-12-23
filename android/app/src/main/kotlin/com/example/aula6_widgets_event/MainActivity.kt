@@ -1,4 +1,4 @@
-package com.example.mobile_projeto_pergunta
+package com.example.aula6_widgets_event
 
 import io.flutter.embedding.android.FlutterActivity
 
