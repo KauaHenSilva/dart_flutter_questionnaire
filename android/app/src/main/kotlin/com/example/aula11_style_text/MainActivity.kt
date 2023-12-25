@@ -1,4 +1,4 @@
-package com.example.aula6_widgets_event
+package com.example.aula11_style_text
 
 import io.flutter.embedding.android.FlutterActivity
 

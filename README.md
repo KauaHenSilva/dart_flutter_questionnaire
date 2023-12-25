@@ -1,4 +1,4 @@
-# aula6_widgets_event
+# aula11_style_text
 
 A new Flutter project.
 
