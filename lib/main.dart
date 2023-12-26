@@ -12,11 +12,11 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  int questaoAtual = 0;
-  int pontucaototal = 0;
+  int _questaoAtual = 0;
+  int _pontucaototal = 0;
 
 
-  final List<Map<String, Object>> dados = [
+  final List<Map<String, Object>> _dados = [
     {
       'enunciado': 'Questão1',
       'alternativa': [
@@ -42,20 +42,20 @@ class _MyAppState extends State<MyApp> {
 
   reset() {
     setState(() {
-      questaoAtual = 0;
-      pontucaototal = 0;
+      _questaoAtual = 0;
+      _pontucaototal = 0;
     });
   }
 
-  responderQuestao(int pontucao) {
+  _responderQuestao(int pontucao) {
     setState(() {
-      questaoAtual++;
-      pontucaototal += pontucao;
+      _questaoAtual++;
+      _pontucaototal += pontucao;
     });
   }
 
-  bool existeQuestao() {
-    return questaoAtual < dados.length;
+  bool _existeQuestao() {
+    return _questaoAtual < _dados.length;
   }
 
   @override
@@ -80,9 +80,9 @@ class _MyAppState extends State<MyApp> {
             height: 35,
             shape: CircularNotchedRectangle(),
           ),
-          body: existeQuestao()
-              ? Questionario(dados, questaoAtual, responderQuestao)
-              : Resultado(pontucaototal),
+          body: _existeQuestao()
+              ? Questionario(_dados, _questaoAtual, _responderQuestao)
+              : Resultado(_pontucaototal),
         ));
   }
 }
