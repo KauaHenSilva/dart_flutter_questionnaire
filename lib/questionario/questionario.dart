@@ -1,5 +1,5 @@
-import 'package:aula22_adicionando_pontuacao2/questionario/alternativa.dart';
-import 'package:aula22_adicionando_pontuacao2/questionario/enunciado.dart';
+import 'package:Questionario/questionario/alternativa.dart';
+import 'package:Questionario/questionario/enunciado.dart';
 import 'package:flutter/material.dart';
 
 class Questionario extends StatelessWidget {

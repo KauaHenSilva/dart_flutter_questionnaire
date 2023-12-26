@@ -1,5 +1,5 @@
-import 'package:aula22_adicionando_pontuacao2/questionario/questionario.dart';
-import 'package:aula22_adicionando_pontuacao2/resultado/resultado.dart';
+import 'package:Questionario/questionario/questionario.dart';
+import 'package:Questionario/resultado/resultado.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
