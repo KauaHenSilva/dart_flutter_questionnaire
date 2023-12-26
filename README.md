@@ -43,7 +43,7 @@ Flutter --version:
 
 ### Usage
 
-Agora o projeto está configurado. Você pode executá-lo com o seguinte comando:
+Agora o projeto está configurado. Você pode executá-lo com os seguintes comandos:
 
     cd QuestionarioExemploConhecimento
 
