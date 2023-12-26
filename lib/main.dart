@@ -1,81 +1,112 @@
-import 'package:aula11_style_text/questao.dart';
+import 'package:aula17_desafio_widget_resultado/alternativa.dart';
+import 'package:aula17_desafio_widget_resultado/janelas/resultados.dart';
+import 'package:aula17_desafio_widget_resultado/questionario.dart';
 import 'package:flutter/material.dart';
 
-void main(List<String> args) {
-  runApp(const Questionario());
+void main() {
+  runApp(const MyApp());
 }
 
-class Questionario extends StatefulWidget {
-  const Questionario({super.key});
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
 
   @override
-  State<Questionario> createState() => _QuestionarioState();
+  State<MyApp> createState() => _MyAppState();
 }
 
-class _QuestionarioState extends State<Questionario> {
-  int _questaoAtual = 0;
+class _MyAppState extends State<MyApp> {
+  int perguntaAtual = 0;
 
-  final List<String> _questoes = [
-    "Usabilidade",
-    "Desempenho",
-  ];
-
-  final List<String> _alternativa = [
-    "Exelente",
-    "Bom",
-    "Ok",
-    "Ruim",
-    "Pessima"
-  ];
-
-  void _proximaQuestao() {
-    if (_questaoAtual < _questoes.length - 1) {
+  proximaPergunta() {
+    if (existePergunta()) {
       setState(() {
-        _questaoAtual++;
+        perguntaAtual++;
       });
     }
   }
 
-  void _reset() {
-    setState(() {
-      _questaoAtual = 0;
-    });
+  restart() {
+    if (perguntaAtual != 0) {
+      setState(() {
+        perguntaAtual = 0;
+      });
+    }
   }
+
+  bool existePergunta() {
+    return perguntaAtual < dados.length;
+  }
+
+  final List<Map<String, Object>> dados = [
+    {
+      'text': 'Meu nome:',
+      'alternativas': ['Kauã', 'Ianca', 'Gabriel', 'Patrick']
+    },
+    {
+      'text': 'Minha Idade:',
+      'alternativas': ['19', '18', '20', '21']
+    },
+    // {
+    //   'text': 'Meu sobrenome:',
+    //   'alternativas': ['Sousa', 'Henrique', 'Oliveriva']
+    // },
+    // {
+    //   'text': 'Nome do meu pai:',
+    //   'alternativas': [
+    //     'Francisco Klebler Sousa',
+    //     'Fransisco Kleber Da Silva',
+    //   ]
+    // },
+    // {
+    //   'text': 'Nome da minha Mãe:',
+    //   'alternativas': ['Norma dos Anjos Almeida', 'Norma dos Santos Almeida']
+    // },
+    // {
+    //   'text': 'Eu faço que faculdade?',
+    //   'alternativas': [
+    //     'Tecnologia da informação',
+    //     'Sistemas de informação',
+    //     'Matematica',
+    //     'Letras'
+    //   ],
+    // }
+  ];
 
   @override
   Widget build(BuildContext context) {
+    List<String> alternativasAtual =
+        existePergunta() ? dados[perguntaAtual].cast()['alternativas'] : [];
+
     return MaterialApp(
-      title: "Questionario",
+      title: 'Questionario',
       theme: ThemeData.dark(),
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        // appBar: AppBar(
-        //   title: const Text("Hello Word"),
-        //   backgroundColor: const Color.fromARGB(211, 102, 102, 102),
-        // ),
+        appBar: AppBar(
+          title: const Text("Questionario"),
+          backgroundColor: Colors.deepPurpleAccent,
+        ),
+        body: existePergunta()
+            ? Column(
+                children: [
+                  Enunciado(dados[perguntaAtual].cast()['text'].toString()),
+                  ...alternativasAtual
+                      .map((e) => Alternativa(e, proximaPergunta))
+                ],
+              )
+            : const Resultados(),
+        bottomNavigationBar: const BottomAppBar(
+          height: 35,
+          shape: CircularNotchedRectangle(),
+        ),
         floatingActionButtonLocation:
             FloatingActionButtonLocation.miniCenterDocked,
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Questao(_questoes[_questaoAtual]),
-              for (String pergunta in _alternativa)
-                ElevatedButton(
-                    onPressed: _proximaQuestao, child: Text(pergunta)),
-            ],
-          ),
-        ),
         floatingActionButton: FloatingActionButton(
+          onPressed: restart,
           shape: const CircleBorder(),
-          onPressed: _reset,
           child: const Icon(Icons.home),
         ),
-        bottomNavigationBar: const BottomAppBar(
-          shape: CircularNotchedRectangle(),
-          height: 30,
-        ),
       ),
-      debugShowCheckedModeBanner: false,
     );
   }
 }

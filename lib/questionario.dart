@@ -1,19 +1,16 @@
 import 'package:flutter/material.dart';
 
-class Questao extends StatelessWidget {
-  const Questao(this.texto, {super.key});
-
-  final String texto;
+class Enunciado extends StatelessWidget {
+  final String text;
+  const Enunciado(this.text, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.all(20),
       child: Text(
-        texto,
-        style: const TextStyle(
-          fontSize: 28,
-        ),
+        text,
+        style: const TextStyle(fontSize: 20),
       ),
     );
   }
