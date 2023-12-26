@@ -1,4 +1,4 @@
-package com.example.aula17_desafio_widget_resultado
+package com.example.aula22_adicionando_pontuacao2
 
 import io.flutter.embedding.android.FlutterActivity
 

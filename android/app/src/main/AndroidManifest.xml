@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="aula17_desafio_widget_resultado"
+        android:label="aula22_adicionando_pontuacao2"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

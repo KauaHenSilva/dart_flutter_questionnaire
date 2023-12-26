@@ -2,16 +2,14 @@ import 'package:flutter/material.dart';
 
 class Alternativa extends StatelessWidget {
   final String text;
-  final void Function() onFunction;
-
-const Alternativa(this.text,this.onFunction, { Key? key }) : super(key: key);
+  final void Function() onFuncao;
+const Alternativa(this.text ,this.onFuncao , { Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context){
-    return SizedBox(
-      width: double.infinity,
+    return Container(
       child: ElevatedButton(
-        onPressed: onFunction,
+        onPressed: onFuncao,
         child: Text(text),
       ),
     );

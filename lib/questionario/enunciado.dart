@@ -7,11 +7,9 @@ class Enunciado extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(20),
-      child: Text(
-        text,
-        style: const TextStyle(fontSize: 20),
-      ),
-    );
+        width: double.infinity,
+        alignment: Alignment.center,
+        margin: const EdgeInsets.all(25),
+        child: Text(text));
   }
 }
