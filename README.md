@@ -45,5 +45,7 @@ Flutter --version:
 
 Agora o projeto está configurado. Você pode executá-lo com o seguinte comando:
 
+    cd QuestionarioExemploConhecimento
+
     flutter run
 
