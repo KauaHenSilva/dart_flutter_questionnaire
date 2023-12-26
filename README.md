@@ -2,7 +2,7 @@
 
 Um projeto desenvolvido em Flutter e Dart para demonstração de conhecimento.
 
-## 🚀 Inicializando
+### 🚀 Inicializando
 
 Siga as instruções abaixo para ter o projeto em execução localmente.
 
@@ -37,13 +37,13 @@ Flutter --version:
 
 3. **Obtenha as dependências:**
 
-    ```bash
+    ```
     flutter pub get
     ```
 
-4. **Execute o projeto:**
+### Usage
 
-    ```bash
+Agora o projeto está configurado. Você pode executá-lo com o seguinte comando:
+
     flutter run
-    ```
 
