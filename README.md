@@ -8,7 +8,7 @@ Siga as instruções abaixo para ter o projeto em execução localmente.
 
 ### 📋 Pré-requisitos
 
-Certifique-se de ter o Flutter e o Dart instalados. Se não tiver, siga as instruções em [flutter.dev](https://flutter.dev/docs/get-started/install) ou [youtubeTuturial]((https://www.youtube.com/watch?v=7Kpd6eprz4k)) para a instalação.
+Certifique-se de ter o Flutter e o Dart instalados. Se não tiver, siga as instruções em [flutter.dev](https://flutter.dev/docs/get-started/install) ou [youtubeTuturial](https://www.youtube.com/watch?v=7Kpd6eprz4k) para a instalação.
 
 Flutter --version:
 
