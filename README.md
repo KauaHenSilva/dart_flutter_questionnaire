@@ -26,13 +26,13 @@ Flutter --version:
 1. **Clone este repositório:**
 
     ```bash
-    git clone https://github.com/KauaHenSilva/QuestionarioExemploConhecimento.git
+    git clone https://github.com/KauaHenSilva/DartFlutter_Questionario.git
     ```
 
 2. **Navegue até o diretório do projeto:**
 
     ```bash
-    cd QuestionarioExemploConhecimento
+    cd DartFlutter_Questionario
     ```
 
 3. **Obtenha as dependências:**
@@ -45,7 +45,7 @@ Flutter --version:
 
 Agora o projeto está configurado. Você pode executá-lo com os seguintes comandos:
 
-    cd QuestionarioExemploConhecimento
+    cd DartFlutter_Questionario
 
     flutter run
 
