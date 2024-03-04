@@ -1,14 +1,8 @@
 # mobilequestionario
 
-### 🎓 App em Execução (Web)
-
-> Link: [Flutter Dart Questionario App Web](https://dart-flutter-questionario-run.vercel.app/)
-
-> ⚠️ **Nota:** Este aplicativo foi desenvolvido para dispositivos móveis, algumas fontes podem não ser exibidas corretamente em outros ambientes.
+Um projeto desenvolvido em Flutter e Dart para demonstração de conhecimento.
 
 ### 🚀 Inicializando
-
-Um projeto desenvolvido em Flutter e Dart para demonstração de conhecimento.
 
 Siga as instruções abaixo para ter o projeto em execução localmente.
 
@@ -24,8 +18,6 @@ Flutter --version:
   Engine • revision 3f3e560236
   Tools • Dart 3.2.3 • DevTools 2.28.4
   ```
-  
-
 
 ### 🔧 Implantação
 
