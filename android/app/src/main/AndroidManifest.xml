@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="mobilequestionario"
+        android:label="dart_flutter_questionario"
         android:name="${applicationName}"
         android:icon="@mipmap/icon">
         <activity

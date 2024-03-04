@@ -1,6 +1,6 @@
 {
-    "name": "mobile_projeto_pergunta",
-    "short_name": "mobile_projeto_pergunta",
+    "name": "dart_flutter_questionario",
+    "short_name": "dart_flutter_questionario",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
