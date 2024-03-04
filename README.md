@@ -1,16 +1,55 @@
 # mobilequestionario
 
-A new Flutter project.
+Um projeto desenvolvido em Flutter e Dart para demonstração de conhecimento.
 
-## Getting Started
+### 🚀 Inicializando
 
-This project is a starting point for a Flutter application.
+Siga as instruções abaixo para ter o projeto em execução localmente.
 
-A few resources to get you started if this is your first Flutter project:
+### 📋 Pré-requisitos
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Certifique-se de ter o Flutter e o Dart instalados. Se não tiver, siga as instruções em [flutter.dev](https://flutter.dev/docs/get-started/install) ou [youtubeTuturial](https://www.youtube.com/watch?v=7Kpd6eprz4k) para a instalação.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Flutter --version:
+
+  ```
+  Flutter 3.16.5 • channel stable • https://github.com/flutter/flutter.git
+  Framework • revision 78666c8dc5 (7 days ago) • 2023-12-19 16:14:14 -0800
+  Engine • revision 3f3e560236
+  Tools • Dart 3.2.3 • DevTools 2.28.4
+  ```
+  
+
+
+### 🔧 Implantação
+
+1. **Clone este repositório:**
+
+    ```bash
+    git clone https://github.com/KauaHenSilva/DartFlutter_Questionario.git
+    ```
+
+2. **Navegue até o diretório do projeto:**
+
+    ```bash
+    cd DartFlutter_Questionario
+    ```
+
+3. **Obtenha as dependências:**
+
+    ```
+    flutter pub get
+    ```
+
+4. **Construa a Aplicação:**
+
+    ```
+    flutter build
+    ```
+    
+### Usage
+
+Agora o projeto está configurado. Você pode executá-lo com o seguinte comando:
+
+    flutter run
+
