@@ -7,7 +7,8 @@ const Alternativa(this.text ,this.onFuncao , { Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context){
-    return Container(
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
       child: ElevatedButton(
         onPressed: onFuncao,
         child: Text(text),

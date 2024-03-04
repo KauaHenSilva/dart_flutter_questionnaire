@@ -1,6 +1,8 @@
-import 'package:Questionario/questionario/questionario.dart';
-import 'package:Questionario/resultado/resultado.dart';
 import 'package:flutter/material.dart';
+import 'package:mobilequestionario/components/my_drawer.dart';
+import 'package:mobilequestionario/questionario/questionario.dart';
+import 'package:mobilequestionario/resultado/resultado.dart';
+import 'package:mobilequestionario/data/question.dart';
 
 void main() => runApp(const MyApp());
 
@@ -14,31 +16,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int _questaoAtual = 0;
   int _pontucaototal = 0;
-
-
-  final List<Map<String, Object>> _dados = [
-    {
-      'enunciado': 'Questão1',
-      'alternativa': [
-        {
-          'text': 'alternativa1',
-          'valor': 1,
-        },
-        {
-          'text': 'alternativa2',
-          'valor': 0,
-        },
-        {
-          'text': 'alternativa3',
-          'valor': 0,
-        },
-        {
-          'text': 'alternativa4',
-          'valor': 0,
-        }
-      ]
-    },
-  ];
 
   reset() {
     setState(() {
@@ -55,20 +32,22 @@ class _MyAppState extends State<MyApp> {
   }
 
   bool _existeQuestao() {
-    return _questaoAtual < _dados.length;
+    return _questaoAtual < dados.length;
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Questionario',
-        theme: ThemeData.dark(),
+        theme: ThemeData.light(),
+        darkTheme: ThemeData.dark(),
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           appBar: AppBar(
             title: const Text("Questionario"),
-            backgroundColor: Colors.deepPurple,
+            centerTitle: true,
           ),
+          drawer: const MyDrawer(),
           floatingActionButton: FloatingActionButton(
             onPressed: reset,
             shape: const CircleBorder(),
@@ -77,11 +56,10 @@ class _MyAppState extends State<MyApp> {
           floatingActionButtonLocation:
               FloatingActionButtonLocation.miniCenterDocked,
           bottomNavigationBar: const BottomAppBar(
-            height: 35,
             shape: CircularNotchedRectangle(),
           ),
           body: _existeQuestao()
-              ? Questionario(_dados, _questaoAtual, _responderQuestao)
+              ? Questionario(dados, _questaoAtual, _responderQuestao)
               : Resultado(_pontucaototal),
         ));
   }

@@ -1,6 +1,6 @@
-import 'package:Questionario/questionario/alternativa.dart';
-import 'package:Questionario/questionario/enunciado.dart';
 import 'package:flutter/material.dart';
+import 'package:mobilequestionario/questionario/alternativa.dart';
+import 'package:mobilequestionario/questionario/enunciado.dart';
 
 class Questionario extends StatelessWidget {
   final List<Map<String, Object>> dados;

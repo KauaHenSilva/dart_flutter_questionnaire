@@ -1,4 +1,4 @@
-package com.example.aula22_adicionando_pontuacao2
+package com.example.mobilequestionario
 
 import io.flutter.embedding.android.FlutterActivity
 
