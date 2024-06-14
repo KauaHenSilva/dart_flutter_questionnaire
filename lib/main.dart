@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mobilequestionario/components/my_drawer.dart';
-import 'package:mobilequestionario/questionario/questionario.dart';
-import 'package:mobilequestionario/resultado/resultado.dart';
-import 'package:mobilequestionario/data/question.dart';
+import 'components/my_drawer.dart';
+import 'questionario/questionario.dart';
+import 'resultado/resultado.dart';
+import 'data/question.dart';
 
 void main() => runApp(const MyApp());
 

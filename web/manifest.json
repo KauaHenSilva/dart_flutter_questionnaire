@@ -1,6 +1,6 @@
 {
-    "name": "dart_flutter_questionario",
-    "short_name": "dart_flutter_questionario",
+    "name": "dart_flutter_questionnaire",
+    "short_name": "dart_flutter_questionnaire",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
