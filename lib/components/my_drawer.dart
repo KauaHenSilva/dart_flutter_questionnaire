@@ -1,4 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+Future<void> _launchInBrowser(Uri url) async {
+  if (!await launchUrl(
+    url,
+    mode: LaunchMode.externalApplication,
+  )) {
+    throw Exception('Could not launch $url');
+  }
+}
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -28,7 +38,10 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             title: const Text('GitHub'),
             leading: const Icon(Icons.favorite),
-            onTap: () {},
+            onTap: () {
+              _launchInBrowser(Uri.parse('https://github.com/KauaHenSilva'));
+              Navigator.pop(context);
+            },
           ),
         ],
       ),
