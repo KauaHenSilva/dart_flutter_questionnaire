@@ -2,7 +2,7 @@
 
 ### 🎓 App em Execução (Web)
 
-> Link: [Flutter Dart Questionario App Web](https://dart-flutter-questionario-run.vercel.app/)
+> Link: [Flutter Dart Questionario App Web](https://dart-flutter-questionnaire.vercel.app/)
 
 > ⚠️ **Nota:** Este aplicativo foi desenvolvido para dispositivos móveis, algumas fontes podem não ser exibidas corretamente em outros ambientes.
 
